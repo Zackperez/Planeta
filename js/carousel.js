@@ -20,7 +20,7 @@ var i = imagenes.length;
 			i = 1;
 		}
 										
-		deslizar_contenido.innerHTML = "<img src=../carousel/"+imagenes[i-1]+".jpg>";
+		deslizar_contenido.innerHTML = "<img src=carousel/"+imagenes[i-1]+".jpg>";
 
 	}
 
@@ -34,7 +34,7 @@ var i = imagenes.length;
 			i = imagenes.length;
 		}
 
-		deslizar_contenido.innerHTML = "<img src=../carousel/"+imagenes[i-1]+".jpg>";
+		deslizar_contenido.innerHTML = "<img src=carousel/"+imagenes[i-1]+".jpg>";
 
 	}
 
