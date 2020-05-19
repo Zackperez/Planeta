@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	<title>Registrarse</title>
+</head>
+<body>
+
+	<header class="header">
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light-blue">
+	    <a class="navbar-brand" href="index.html" style="color:white">Espacio Exterior</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	  
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav ml-auto">
+
+
+	        <li class="nav-item active">
+	          <a class="nav-link" style="color:white;" href="#">Login <i class="fas fa-sign-in-alt"></i> </a>
+	        </li>
+
+
+	        <li class="nav-item">
+	          <a class="nav-link" style="color:white;" href="#">Registrate <i class="fas fa-user-plus"></i></a>
+	        </li>
+	      </ul>
+	    </div>
+	  </nav>
+	</header>
+
+	<div class="container">
+		<div class ="card text-white border-primary bg-light mb-12" style="max-width: 50rem;"> 
+
+			<div class="card-header"><h4 align="center">Completa los siguientes campos</h4></div>
+				<div class="card-body text-primary">
+
+					<form class="needs-validation" novalidate>
+					  <div class="form-row">
+					    <div class="col-md-4 mb-3">
+					      <label for="validationCustom01">Primer Nombre</label>
+					      <input type="text" class="form-control" id="validationCustom01" placeholder="primer nombre" required>
+
+					    </div>
+					    <div class="col-md-4 mb-3">
+					      <label for="validationCustom02">Segundo Nombre</label>
+					      <input type="text" class="form-control" id="validationCustom02" placeholder="segundo nombre" required>
+
+					    </div>
+					    <div class="col-md-4 mb-3">
+					      <label for="validationCustomUsername">Nombre de Usuario</label>
+
+					      <div class="input-group">
+					        <div class="input-group-prepend">
+					          <span class="input-group-text" id="inputGroupPrepend">@</span>
+					        </div>
+
+					        <input type="text" class="form-control" id="validationCustomUsername" placeholder="nombre de usuario" aria-describedby="inputGroupPrepend" required>
+
+					      </div>
+					    </div>
+					  </div>
+
+
+					  <div class="form-row">
+					    <div class="col-md-6 mb-3">
+					      <label for="validationCustom03">Contraseña</label>
+					      <input type="text" class="form-control" id="validationCustom03" placeholder="contraseña" required>
+					    </div>
+					    <div class="col-md-3 mb-3">
+					      <label for="validationCustom04">State</label>
+					      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+					    </div>
+					    <div class="col-md-3 mb-3">
+					      <label for="validationCustom05">Zip</label>
+					      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+					    </div>
+					  </div>
+
+					  <button class="btn btn-primary" type="submit">Registrarse</button>
+					</form>
+			</div>
+		</div>
+	</div>	
+
+
+<script src="https://kit.fontawesome.com/ed04c42713.js" crossorigin="anonymous"></script>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+	
+</body>
+</html>
