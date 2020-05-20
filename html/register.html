@@ -5,30 +5,18 @@
 	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<title>Registrarse</title>
 </head>
 <body>
 
 	<header class="header">
 	  <nav class="navbar navbar-expand-lg navbar-light bg-light-blue">
-	    <a class="navbar-brand" href="../index.html" style="color:white">Espacio Exterior</a>
+	    <a class="navbar-brand" href="../index.html" style="color:white">Regresar</a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	  
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav ml-auto">
-
-
-	        <li class="nav-item active">
-	          <a class="nav-link" style="color:white;" href="#">Login <i class="fas fa-sign-in-alt"></i> </a>
-	        </li>
-
-
-	        <li class="nav-item">
-	          <a class="nav-link" style="color:white;" href="#">Registrate <i class="fas fa-user-plus"></i></a>
-	        </li>
-	      </ul>
 	    </div>
 	  </nav>
 	</header>
@@ -39,27 +27,27 @@
 			<div class="card-header"><h4 align="center">Completa los siguientes campos</h4></div>
 				<div class="card-body text-primary">
 
-					<form class="needs-validation" novalidate>
+					<form action="" name="formulario" method="GET">
 					  <div class="form-row">
 					    <div class="col-md-4 mb-3">
-					      <label for="validationCustom01">Primer Nombre</label>
-					      <input type="text" class="form-control" id="validationCustom01" placeholder="primer nombre" required>
+					      <label>Primer Nombre</label>
+					      <input type="text" class="form-control"name="nombre" placeholder="primer nombre">
 
 					    </div>
 					    <div class="col-md-4 mb-3">
-					      <label for="validationCustom02">Segundo Nombre</label>
-					      <input type="text" class="form-control" id="validationCustom02" placeholder="segundo nombre" required>
+					      <label>Segundo Nombre</label>
+					      <input type="text" class="form-control"name="apellido" placeholder="segundo nombre">
 
 					    </div>
 					    <div class="col-md-4 mb-3">
-					      <label for="validationCustomUsername">Nombre de Usuario</label>
+					      <label>Nickname</label>
 
 					      <div class="input-group">
 					        <div class="input-group-prepend">
-					          <span class="input-group-text" id="inputGroupPrepend">@</span>
+					          <span class="input-group-text"name="inputGroupPrepend">@</span>
 					        </div>
 
-					        <input type="text" class="form-control" id="validationCustomUsername" placeholder="nombre de usuario" aria-describedby="inputGroupPrepend" required>
+					        <input type="text" class="form-control"name="nickname" placeholder="nickname" aria-describedby="inputGroupPrepend">
 
 					      </div>
 					    </div>
@@ -67,21 +55,26 @@
 
 
 					  <div class="form-row">
+					    <div class="col-md-3 mb-3">
+					      <label>Contraseña</label>
+					      <input type="password" class="form-control" name="password" placeholder="contraseña">
+					    </div>
+					    <div class="col-md-3 mb-3">
+					      <label>Confirmar contraseña</label>
+					      <input type="password" class="form-control"name="password2" placeholder="confirmar contraseña" >
+					    </div>
 					    <div class="col-md-6 mb-3">
-					      <label for="validationCustom03">Contraseña</label>
-					      <input type="text" class="form-control" id="validationCustom03" placeholder="contraseña" required>
-					    </div>
-					    <div class="col-md-3 mb-3">
-					      <label for="validationCustom04">State</label>
-					      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-					    </div>
-					    <div class="col-md-3 mb-3">
-					      <label for="validationCustom05">Zip</label>
-					      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+					      <label>Correo Electronico</label>
+					      <input type="text" class="form-control" name="email" placeholder="correo electronico">
 					    </div>
 					  </div>
-
-					  <button class="btn btn-primary" type="submit">Registrarse</button>
+						  <div align="center">
+						  	<input type="checkbox" name="terminos" name="terminos"> Acepto términos y condiciones
+						  </div>
+						 <br> 
+						<div align="center">
+						 	<input type="submit" class="btn btn-lg btn-primary" id="btn" name="btn" value="registrarse">
+						 </div>
 					</form>
 			</div>
 		</div>
@@ -91,6 +84,7 @@
 <script src="https://kit.fontawesome.com/ed04c42713.js" crossorigin="anonymous"></script>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/register.js"></script>
 	
 </body>
 </html>
