@@ -5,6 +5,7 @@ body,html{
     background-image: url("../img/fondo5.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -34,10 +35,8 @@ body,html{
     border: 0px solid #000000;
     background-color: #171717;
 }
-    @media only screen and (max-width: 400px) {
-        body{
-            height: 130%;
-        }
+    @media only screen and (max-width: 300px) {
+
     
     .card{
         top: 30px;
