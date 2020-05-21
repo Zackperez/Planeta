@@ -111,12 +111,6 @@ h2{
 }
 
 @media only screen and (max-width: 600px) {
-	
-	body, html{
-	height: 100%;
-	width: 100%;
-	}
-
 
 	.fondo1{
 		height: auto;
